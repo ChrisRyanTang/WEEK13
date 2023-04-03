@@ -1,3 +1,61 @@
 body {
     background-color: tan;
+    display: grid;
+}
+
+#twoSection {
+    display: flex;
+}
+
+#form {
+    display: flex;
+    justify-content: right;
+}
+
+label {
+    text-align: center;
+}
+
+#submitContainer {
+    display: flex;
+    justify-content: center;
+}
+
+#submit {
+    margin: auto;
+    display: block;
+}
+
+button {
+    margin: 10px 0px;
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+header {
+    display: flex;
+}
+/* #colorButton {
+    display: grid;
+    justify-content: right;
+    
+} */
+
+@media (min-width: 600px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    body {
+        display: block;
+    }
+
+    #form {
+        display: block;
+    }
 }

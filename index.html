@@ -5,28 +5,35 @@
     <meta charset="UTF-8">
     <title>DOM manipulation example</title>
     <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device=width">
 </head>
 
 <body>
     <header>
         <h1>Enter student's information</h1>
-        <button>Change Background Color</button>
+        <button id="colorButton">Change Background Color</button>
     </header>
 
-    <section>
-        <label>First Name:</label>
-        <input id="firstname" type="text">
-        <label>Last Name:</label>
-        <input id="lastname" type="text">
-        <label>Program Name:</label>
-        <input id="progname" type="text">
-        <button>Submit</button>
+    <section id="oneSection">
+        <div id="form">
+            <label>First Name:</label>
+            <input id="firstname" type="text">
+            <label>Last Name:</label>
+            <input id="lastname" type="text">
+            <label>Program Name:</label>
+            <input id="progname" type="text">
+        </div>
+        <div id="submitContainer">
+            <button id="submit">Submit</button>
+        </div>
     </section>
 
-    <section>
+    <section id="twoSection">
         <h2>Enrolled students</h2>
-        <ul>Sudents Enrolled in CIT</ul>
-        <ul>Sudents Enrolled in CST</ul>
+        <div id="lists">
+            <ul>Sudents Enrolled in CIT</ul>
+            <ul>Sudents Enrolled in CST</ul>
+        </div>
     </section>
 
 </body>
